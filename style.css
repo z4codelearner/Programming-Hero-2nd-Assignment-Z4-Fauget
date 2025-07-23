@@ -295,6 +295,95 @@ button:hover {
 .trusted-seller-content ul li::marker{
     color: #E95A08;
 }
+/* Latest Deals Section */
+
+
+
+
+
+/* Footer Section */
+
+/* newsletter Container Style */
+.newsletter-container {
+    background-image: url('./assets/news-letter-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 550px;
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.newsletter-content {
+    max-width: 800px;
+    width: 100%;
+
+}
+.newsletter-title {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+}
+.newsletter-form input{
+    padding: 15px;
+    width: 100%;
+    border: 1px solid transparent;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    background-color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.newsletter-form input:focus{
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.newsletter-btn{
+    padding: 15px 30px;
+    border: 2px solid transparent;
+}
+
+/* footer-container style */
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-logo img {
+    width: 50px;
+    height: 50px;
+}
+.footer-logo-description{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer-social-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    }
+
 
 
 
@@ -386,7 +475,41 @@ button:hover {
     .trusted-seller-title {
         font-size: 24px;
     }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Footer Section style */
+    /* newsletter Container Style */
+    .newsletter-container{
+        height: 350px;
+    }
+    .newsletter-title {
+        font-size: 24px;
+    }
+    .newsletter-form input{
+        padding: 10px;
+        font-size: 14px;
+    }
+    .newsletter-btn{
+        padding: 10px 20px;
+    }
+    .newsletter-content {
+        max-width: 350px;
+        width: 100%;
+    }
 
 
 
