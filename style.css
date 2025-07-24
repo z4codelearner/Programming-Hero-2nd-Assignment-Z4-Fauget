@@ -274,6 +274,16 @@ button:hover {
     right: -100px;
     animation: spin 10s linear infinite;
 }
+/* Animation Spin infinite */
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+    
+}
 .trusted-seller-content {
     flex: 1;
     max-width: 480px;
@@ -296,9 +306,6 @@ button:hover {
     color: #E95A08;
 }
 /* Latest Deals Section */
-
-
-
 
 
 /* Footer Section */
@@ -510,27 +517,3 @@ button:hover {
         max-width: 350px;
         width: 100%;
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Animation Spin infinite */
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-    
-}
