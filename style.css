@@ -138,9 +138,6 @@ button:hover {
 .shopping-cart:hover {
     color: #E95A08;
 }
-.cart-icon:hover .cart-count{
-    color: #E95A08;
-}
 .cart-count{
     color: #000000;
 }
@@ -257,8 +254,7 @@ button:hover {
     gap: 20px;
 }
 .trusted-seller-image {
-    flex: 1;
-    max-width: 480px;
+    max-width: 550px;
     position: relative;
     display: flex;
     justify-content: end;
@@ -285,8 +281,7 @@ button:hover {
     
 }
 .trusted-seller-content {
-    flex: 1;
-    max-width: 480px;
+    max-width: 550px;
 }
 .trusted-seller-title{
     font-size: 50px;
@@ -301,6 +296,11 @@ button:hover {
     gap: 10px;
     margin: 20px 0;
     margin-left: 24px;
+}
+.trusted-seller-list li p{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
 }
 .trusted-seller-content ul li::marker{
     color: #E95A08;
@@ -368,29 +368,49 @@ button:hover {
 .footer-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
     gap: 20px;
+    padding: 50px 0;
+
 }
 .footer-logo{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
-.footer-logo img {
-    width: 50px;
-    height: 50px;
+.footer-logo a img {
+    width: 135px;
 }
 .footer-logo-description{
     font-size: 14px;
     color: rgba(0, 0, 0, 0.5);
 }
-
+.footer-links-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .footer-social-links{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 10px;
+    gap: 20px;
     }
-
+.footer-social-links img {
+    width: 24px;
+    height: 24px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.footer-social-links img:hover{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
 
 
 
@@ -517,3 +537,8 @@ button:hover {
         max-width: 350px;
         width: 100%;
     }
+    .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: start;
+    padding: 30px 20px;
+}
